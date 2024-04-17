@@ -119,11 +119,13 @@ class HelloWorld {
     }
     
     private static void ex7() {
+        //7 Crie um programa que pergunte a idade de uma pessoa. A partir da idade informada imprima se ele não pode votar (idade inferior a 16), se o voto é facultativo (idade igual a 16, 17 ou maior do que 70), ou ainda se o voto é obrigatório para idades de 18 a 70. 
+        
         int idade = scanner.nextInt();
 
         if(idade < 16){
             System.out.println("Voce nao precisa votar!");
-        }else if(idade>=18){
+        }else if(idade>=18 && idade <= 70){
             System.out.println("O voto e obrigatorio");
         }else{
             System.out.println("O voto e facultativo");
